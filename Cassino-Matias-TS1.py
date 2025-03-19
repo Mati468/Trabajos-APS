@@ -8,12 +8,12 @@ Created on Mon Mar 10 12:32:16 2025
 """
 En este primer trabajo comenzaremos por diseñar un generador de señales que utilizaremos en las primeras simulaciones que hagamos.
 La primer tarea consistirá en programar una función que genere señales senoidales y que permita parametrizar:
-la amplitud máxima de la senoidal (volts)
-su valor medio (volts)
-la frecuencia (Hz)
-la fase (radianes)
-la cantidad de muestras digitalizada por el ADC (# muestras)
-la frecuencia de muestreo del ADC.
+vmax = la amplitud máxima de la senoidal (volts)
+dc = su valor medio (volts)
+ff = la frecuencia (Hz)
+ph = la fase (radianes)
+nn = la cantidad de muestras digitalizada por el ADC (# muestras)
+fs = la frecuencia de muestreo del ADC.
 es decir que la función que uds armen debería admitir se llamada de la siguiente manera
 
 tt, xx = mi_funcion_sen( vmax = 1, dc = 0, ff = 1, ph=0, nn = N, fs = fs)
@@ -22,6 +22,13 @@ matplotlib.pyplot donde encontrarán todas las funciones de visualización estil
 
 import matplotlib.pyplot as plt
 plt.plot(tt, xx)
+
+Realizar los experimentos que se comentaron en clase. Siguiendo la notación de la función definida más arriba:
+ff = 500 Hz
+ff = 999 Hz
+ff = 1001 Hz
+ff = 2001 Hz
+Implementar alguna otra señal propia de un generador de señales. 
 """
 #%% LIBRERIAS
 import numpy as np

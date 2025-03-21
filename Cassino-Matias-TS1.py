@@ -76,7 +76,7 @@ t_square, x_square = mi_funcion_square(vmax = 2, dc = 0, ff = 5, ph = np.pi/4, n
 
 #%% PRESENTACION DE RESULTADOS SEÑAL SENOIDAL
 plt.figure(1)
-plt.plot(tt,xx,label = 'ff = 1000 Hz')
+plt.plot(tt,xx,label = 'ff = 1 Hz')
 plt.grid()
 plt.legend()
 plt.title('Señal senoidal')
